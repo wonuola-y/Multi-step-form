@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Add from './components/Add';
 import Plan from './components/Plan';
 import Summary from './components/Summary';
+import Thanks from './components/Thanks';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
      <Route path='/Add' element={<Add />}/>
      <Route path='/Plan' element={<Plan />}/>
      <Route path='/Summary' element={<Summary/>}/>
+     <Route path='/Thanks' element={<Thanks/>}/>
      <Route />
      </Routes>
     

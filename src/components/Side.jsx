@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 function Side() {
   return (
     <div className="side flex flex-col justify-center items-center w-full my-10 ">
-      <div className="flex w-full  text-white my-3">
+      <Link to='/' className="flex w-full  text-white my-3">
         <div className=" flex justify-center w-4/12 items-center  text-white">
           <span className="border-solid text-sm  border-[1px] text-center text-off-white 
           hover:bg-lightblue
@@ -19,8 +20,8 @@ function Side() {
           </em>
           <h3 className="font-bold">Your info</h3>
         </div>
-      </div>
-      <div className="flex w-full  text-white my-3">
+      </Link>
+      <Link to='/Plan' className="flex w-full  text-white my-3">
         <div className="flex justify-center items-center w-4/12 uppercase">
           <span className="border-solid  border-[1px] text-sm text-center border-blue rounded-full w-1/3
            hover:bg-lightblue
@@ -35,9 +36,9 @@ function Side() {
           </em>
           <h3 className="font-bold"> Select Plan</h3>
         </div>
-      </div>
+      </Link>
 
-      <div className="flex w-full  text-white my-3">
+      <Link to='/Add' className="flex w-full  text-white my-3">
         <div className="w-4/12 items-center flex justify-center">
           <span className="border-solid text-sm border-[1px] text-center border-blue rounded-full w-1/3
            hover:bg-lightblue
@@ -52,9 +53,9 @@ function Side() {
           </em>
           <h3 className="font-bold">Add-ons</h3>
         </div>
-      </div>
+      </Link>
 
-      <div className="flex w-full  text-white my-3">
+      <Link to='/Summary' className="flex w-full  text-white my-3">
         <div className="w-4/12 flex justify-center  items-center">
           <span className="border-solid  text-sm  border-[1px] text-center border-blue rounded-full w-1/3
            hover:bg-lightblue
@@ -69,7 +70,7 @@ function Side() {
           </em>
           <h3 className="font-bold">Summary</h3>
         </div>
-      </div>
+      </Link>
     </div>
 
     // {/* <!-- Sidebar end -->
